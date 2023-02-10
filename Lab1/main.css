@@ -1,0 +1,118 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(19, 20vh);
+}
+
+#item1{
+    grid-row: 2/5;
+    grid-column: 1/6;
+}
+#item2{
+    grid-row: 1;
+    grid-column: 1/6;
+    text-align: center;
+}
+
+#resumeBorder{
+    grid-row: 6/10;
+    grid-column: 1/6;
+    border: 5px solid whitesmoke;
+}
+#resumeTitle{
+    grid-row: 6/7;
+    grid-column: 3/4;
+}
+#resumePara{
+    text-align: center;
+    grid-row: 7/10;
+    grid-column: 2/5;
+}
+
+#projectsBorder{
+    grid-row: 11/16;
+    grid-column: 1/6;
+    border: 5px solid whitesmoke;
+}
+
+#projectsTitle{
+    grid-row: 11/12;
+    grid-column: 3/4;
+}
+
+#projectsPara{
+    text-align: center;
+    grid-row: 12/16;
+    grid-column: 2/5;
+}
+
+#aboutBorder{
+    grid-row: 17/20;
+    grid-column: 1/6;
+    background-color: whitesmoke;
+    border: 5px solid black;
+}
+#aboutTitle{
+    grid-row: 17/18;
+    grid-column: 3/4;
+}
+#aboutPara{
+    text-align: center;
+    grid-row: 18/20;
+    grid-column: 2/5;
+}
+
+
+#leftColumn{
+    margin-right: 10px;
+    margin-top: 5px;
+    grid-row: 1/3;
+    grid-column: 5/6;
+}
+body{
+    margin: 0;
+}
+
+h1,h2{
+
+    text-align: center;
+    color: whitesmoke;
+}
+
+a{
+    text-align: center;
+    color: whitesmoke;
+}
+
+a:any-link{
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: black;
+    }
+
+    #item1{
+        grid-row: 2/4;
+        grid-column: 1/6;
+    }
+
+    h1,h2{
+
+        text-align: center;
+        color: whitesmoke;
+        font-size: 15pt;
+    }
+
+    #leftColumn{
+        border: 10 solid whitesmoke;
+        border-color: whitesmoke;
+        grid-row: 4/6;
+        grid-column: 2/5;
+    }
+}
